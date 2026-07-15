@@ -1,0 +1,22 @@
+:root {
+  font: 14px/145% 'Manrope', system-ui, sans-serif;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f1ea;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+}
