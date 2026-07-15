@@ -4,6 +4,7 @@ import DrawingCanvas from './components/DrawingCanvas'
 import { parseDxf } from './utils/dxfImport'
 import { createId } from './utils/id'
 import { generateTweens } from './utils/tweenGeneration'
+import logoUrl from '../assets/logo.png'
 import './App.css'
 
 export default function App() {
@@ -45,17 +46,15 @@ export default function App() {
   return <div className="app-shell">
     <aside className="intro-panel">
       <a className="brand-mark" href="https://shaoyiw.com" target="_blank" rel="noreferrer">
-        more: shaoyiw.com
+        <img src={logoUrl} alt="Crochet Creator logo" />
+        <span>shaoyiw.com</span>
       </a>
       <div className="intro-copy">
-        <p className="eyebrow">Crochet geometry workspace</p>
-        <h1>Shape an idea,<br />one line at a time.</h1>
+        <p className="eyebrow">Crochet Creator</p>
+        <h1>Get crochet diagrams from your own drawings!</h1>
         <p className="intro-lede">A focused drafting space for building crochet outlines and internal construction guides.</p>
       </div>
-      <div className="notes-block">
-        <label htmlFor="project-notes">Project notes</label>
-        <textarea id="project-notes" placeholder="Write your introduction, pattern notes, or instructions here…" />
-      </div>
+      <div className="left-content-feed" aria-label="Tutorials and showcases" />
       <p className="intro-footer">© 2026 Shaoyi Wang</p>
     </aside>
 
